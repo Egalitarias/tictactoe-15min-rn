@@ -2,7 +2,7 @@
 
 # Main code
 
-See App.txs for the game code
+See App.tsx for the game code
 
 ## Premise
 
