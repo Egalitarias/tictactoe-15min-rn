@@ -34,10 +34,9 @@ export default function App() {
                   <TouchableOpacity
                     key={rowIndex}
                     onPress={() => {
-                      const update = [...board];
                       if (board[columnIndex][rowIndex] === empty) {
                         board[columnIndex][rowIndex] = player;
-                        setBoard(update);
+                        setBoard(board);
                         const winCheckValue = player === cross ? 1 : -1;
                         columnWin[columnIndex] += winCheckValue;
                         setColumnWin(columnWin);
